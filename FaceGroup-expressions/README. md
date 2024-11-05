@@ -2,8 +2,6 @@
 
 This repository demonstrates a **Proof of Concept (PoC)** for clustering images with similar facial expressions or poses using the **InsightFace** library's `buffalo_l` model. The PoC loads images, extracts facial embeddings, and clusters them based on similarity.
 
----
-
 ## Overview
 
 This project was designed to:
@@ -23,12 +21,10 @@ This project was designed to:
 
 Here's a brief overview of the project files:
 
-```plaintext
 face_clustering_poc/
-├── images/               # Directory for sample images
-├── embeddings/           # Directory to save embeddings (optional)
-├── face_clustering_poc.py # Main script to run the PoC
-├── config.py             # Configuration and constants
-├── face_model.py         # Model loading and embedding extraction functions
-├── clustering.py         # Clustering and similarity calculation functions
-└── utils.py              # Utility functions (image loading, logging)
+├── sample images/               # Directory for sample images
+├── face_clustering_poc.py       # Main script to run the PoC
+├── config.py                    # Configuration and constants
+├── face_model.py                # Model loading and embedding extraction functions
+├── clustering.py                # Clustering and similarity calculation functions
+└── utils.py                     # Utility functions (image loading, logging)
