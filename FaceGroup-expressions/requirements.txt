@@ -1,0 +1,4 @@
+insightface
+sklearn 
+numpy 
+opencv-python-headless

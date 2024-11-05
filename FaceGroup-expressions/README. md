@@ -1,0 +1,34 @@
+# Face Clustering Proof of Concept (PoC)
+
+This repository demonstrates a **Proof of Concept (PoC)** for clustering images with similar facial expressions or poses using the **InsightFace** library's `buffalo_l` model. The PoC loads images, extracts facial embeddings, and clusters them based on similarity.
+
+---
+
+## Overview
+
+This project was designed to:
+1. **Group similar faces** based on subtle variations (expressions, poses).
+2. Use **face embeddings** to create clusters of faces with minimal manual effort.
+3. Serve as a foundation for more advanced features like keyword-based image search, similar face detection, and auto-collage generation.
+
+### How It Works
+
+1. **Image Processing**: Each image is processed to extract face embeddings using `buffalo_l`.
+2. **Clustering**: DBSCAN clustering is used to group similar faces by calculating the cosine similarity of embeddings.
+3. **Results Logging**: Clustering results are displayed in the console, showing groups of images with similar faces.
+
+---
+
+## Directory Structure
+
+Here's a brief overview of the project files:
+
+```plaintext
+face_clustering_poc/
+├── images/               # Directory for sample images
+├── embeddings/           # Directory to save embeddings (optional)
+├── face_clustering_poc.py # Main script to run the PoC
+├── config.py             # Configuration and constants
+├── face_model.py         # Model loading and embedding extraction functions
+├── clustering.py         # Clustering and similarity calculation functions
+└── utils.py              # Utility functions (image loading, logging)
